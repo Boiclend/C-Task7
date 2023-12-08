@@ -7,13 +7,13 @@
 // Поменять строки массива местами, строку с минимальным элементом и первую строку массива. Организовать удобный вывод на экран.
 
 
-int Message(string text) {
+int Message(string text) { 
     Console.WriteLine(text);
     int num = int.Parse(Console.ReadLine());
     return num;
 }
 
-double[,] GetDoubleMass(int a, int b) {
+double[,] GetDoubleMass(int a, int b) { // заполнение массива
     double[,] MyArray = new double[10,10];
     for (int i = 0; i < 10; i++)
     {
@@ -27,7 +27,7 @@ double[,] GetDoubleMass(int a, int b) {
     return MyArray;
 }
 
-void GetMass(double[,] arr) {
+void GetMass(double[,] arr) { // вывод массива
     for (int i = 0; i < 10; i++)
     {
         for (int j = 0; j < 10; j++)
@@ -39,7 +39,7 @@ void GetMass(double[,] arr) {
    
 }
 
-int FindMinElementInMass(double[,] arr) {
+int FindMinElementInMass(double[,] arr) { // поиск строки с минимальным элементом массива
     double min = arr[0,0];
     int MinRow = 0;
     for (int i = 0; i < 10; i++)
@@ -57,7 +57,7 @@ int FindMinElementInMass(double[,] arr) {
     return MinRow;
 }
 
-double[,] ReplaceRowFithMinElement(double[,] arr, int MinimalRow) {
+double[,] ReplaceRowFithMinElement(double[,] arr, int MinimalRow) { // замена первой строки и строки с минимальным элементом в массиве
     double temp;
     int count = 0;
     for (int i = MinimalRow; i <= MinimalRow; i++)
